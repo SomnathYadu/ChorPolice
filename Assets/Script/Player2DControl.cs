@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+//This script is for player control in 2D game.
 public class Player2DControl : MonoBehaviour
 {
     public float walkSpeed = 8f;                    // The fastest the player can travel in the x axis.
@@ -33,7 +32,7 @@ public class Player2DControl : MonoBehaviour
                 grounded = true;
         }
 
-        //FOnr constant walking of player
+        //For constant walking of player
         rb.velocity = new Vector2(walkSpeed / 2, rb.velocity.y);
 
         //For walk
@@ -67,7 +66,6 @@ public class Player2DControl : MonoBehaviour
             if (facingLeft)
                 Flip();
         }
-
     }
 
     void Flip()

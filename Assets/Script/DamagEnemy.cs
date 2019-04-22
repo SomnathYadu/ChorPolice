@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DamagEnemy : MonoBehaviour
 {
@@ -13,5 +11,4 @@ public class DamagEnemy : MonoBehaviour
         if (enemyHealth <= 0)
             GameMaster.KillEnemy(gameObject);
     }
-
 }

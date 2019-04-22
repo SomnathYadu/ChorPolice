@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class PistolWeapon : MonoBehaviour
 {
     AudioSource audio;
